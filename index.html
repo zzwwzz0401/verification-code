@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerificationCode</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        canvas {
+            margin-bottom: 20px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        input {
+            border: 2px solid #edf1ff;
+            padding: 5px 15px;
+            height: 30px;
+            outline: unset;
+            box-shadow: unset;
+            box-sizing: content-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        input:focus {
+            border: 2px solid #376cf0;
+        }
+
+        input::-webkit-input-placeholder {
+            color: #bdbdbd;
+        }
+
+        button {
+            color: #fff;
+            background: #376cf0;
+            border: 1px solid #376cf0;
+            display: flex;
+            padding: .5rem 1.375rem;
+            outline: unset;
+            cursor: pointer;
+            border-radius: .1875rem
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <canvas id="canvas" width="200" height="80"></canvas>
+        <input id="input" type="text" placeholder="请输入验证码">
+        <button id="button">GO</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
